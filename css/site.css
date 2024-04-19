@@ -1,15 +1,12 @@
 /* we can use a single css file to style all the files in our wwebsite */
 
-/* you can pick your own background colors, text colors, and fonts */
-
-/* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: #197a29;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
+
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: "Times New Roman", sans-serif;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -33,4 +30,20 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
+}
+
+
+/* animations for picture, title text, and marquis*/
+.hotaf {
+  margin: auto;
+  width: 400px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: coral;
+  color: white;
+  animation: turnhehe 3s infinite;
+}
+
+@keyframes turnhehe {
+  100% {transform: rotate(360deg);}
 }
