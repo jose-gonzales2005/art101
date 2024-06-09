@@ -53,7 +53,7 @@ for (i = 0; i < 2; i++) { //loops through and adds all the markers in the marker
 
 function onMarkerClick(e) {
     $.get(e.target.options.ndurl, function( response ) {
-        L.popup()  
+        L.popup({maxHeight: 400})  
                 .setLatLng(e.latlng)
                 .setContent(response)
                 .openOn(map);
